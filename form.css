@@ -1,0 +1,139 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+body {
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: center;
+}
+
+/* Progress Bar */
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #ddd;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+
+.step-container p {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background: #ddd;
+    margin: 10px;
+}
+
+/* Active step styles */
+.step-container.active .step-circle {
+    background: #6A0DAD;
+}
+
+/* Completed step styles */
+.step-container.completed .step-circle {
+    background: #28a745;
+}
+
+/* Form Steps */
+.form-step {
+    display: none;
+    text-align: left;
+}
+
+.form-step.active {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    color: #6A0DAD;
+}
+
+h4 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 98%;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload Box */
+.upload-box {
+    border: 2px dashed #6A0DAD;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #6A0DAD;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Thumbs Up Icon */
+
+.success_image {
+    display: flex;
+    min-width: 200px;
+    justify-content: center;
+  }
+  
+.success_image img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }

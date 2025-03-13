@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #d5d5d5;
+}
+
+/* Pre CSS */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav_image {
+  display: flex;
+  min-width: 55px;
+  justify-content: center;
+}
+
+.nav_image img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px; 
+  background: #2a2931;
+  padding: 15px 10px;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Sidebar expands on hover */
+.sidebar:hover {
+  width: 270px;
+}
+
+/* Profile Name */
+.hello-text {
+    font-size: 12px; 
+    color: #bbb; 
+}
+  
+  .profile_name {
+    font-size: 18px; 
+    color: #fff; 
+    font-weight: bold;
+}
+  
+/* Show hello Anna when sidebar expands */
+.sidebar:hover .profile_name,
+.sidebar:hover .hello-text{
+  opacity: 1;   
+}
+
+/* Hide text when sidebar is collapsed */
+.sidebar.close .profile_name,
+.sidebar.close .hello-text{
+  opacity: 0 !important; 
+}
+
+/* Sidebar menu items */
+.menu_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+
+/* Sidebar menu links */
+.item {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #707070;
+}
+
+.link:hover {
+  color: #000000;
+  background-image: linear-gradient(#ecad25,#f4ce5f);
+}
+
+.link span {
+  white-space: nowrap;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar:hover .link span {
+  opacity: 1; 
+}
+
+.link i {
+  height: 50px;
+  min-width: 55px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+
+
+
+ 
